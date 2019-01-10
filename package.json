@@ -40,6 +40,6 @@
     "then-sleep": "^1.0.1"
   },
   "devDependencies": {
-    "standard": "^11.0.0"
+    "prettier-standard": "^8.0.1"
   }
 }
