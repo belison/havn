@@ -1,13 +1,12 @@
 {
   "name": "havn",
   "version": "0.5.4",
-  "description":
-    "Havn creates a safe place for multi-service local docker deployment",
+  "description": "Havn creates a safe place for multi-service local docker deployment",
   "author": "Thomas A. Valletta",
   "contributors": [
     "BJ Neilsen <bj.neilsen@gmail.com> (https://localshred.github.io)"
   ],
-  "repository": "havnjs/havn"
+  "repository": "havnjs/havn",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -41,7 +40,6 @@
     "then-sleep": "^1.0.1"
   },
   "devDependencies": {
-    "pre-commit-package-version": "^1.0.7",
     "standard": "^11.0.0"
   }
 }
