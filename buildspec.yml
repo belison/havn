@@ -1,0 +1,13 @@
+version: 0.1
+
+# phases:
+#   pre_build:
+#     commands:
+#       - echo "//npm.mydomain.com/:_authToken=\"${NPM_TOKEN}\"" >> .npmrc
+#   build:
+#     commands:
+#       - npm publish --registry=https://npm.mydomain.com/
+artifacts:
+  discard-paths: no
+  files:
+    - "**/*"

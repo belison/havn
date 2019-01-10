@@ -1,0 +1,12 @@
+version: '2'
+
+services:
+
+  sinopia:
+    image: rnbwd/sinopia:alpine
+    ports:
+      - "4873:4873"
+    volumes:
+      - ./config.yaml:/sinopia/registry/config.yaml
+      - ./.registry:/sinopia/storage
+    restart: always

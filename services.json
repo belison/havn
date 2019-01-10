@@ -1,0 +1,6 @@
+{
+  "run": [
+    "../cor-workflows",
+    "../cor-apps"
+  ]
+}

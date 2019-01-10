@@ -1,0 +1,47 @@
+{
+  "name": "havn",
+  "version": "0.5.4",
+  "description":
+    "Havn creates a safe place for multi-service local docker deployment",
+  "author": "Thomas A. Valletta",
+  "contributors": [
+    "BJ Neilsen <bj.neilsen@gmail.com> (https://localshred.github.io)"
+  ],
+  "repository": "havn/havn"
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "license": "ISC",
+  "preferGlobal": true,
+  "bin": {
+    "havn": "index.js"
+  },
+  "dependencies": {
+    "async-retry": "^1.2.1",
+    "async-to-gen": "^1.4.0",
+    "axios": "^0.18.0",
+    "bluebird": "^3.5.1",
+    "chalk": "^2.3.1",
+    "commander": "^2.14.1",
+    "configstore": "^3.1.1",
+    "diff-json": "^0.1.11",
+    "github": "^13.1.0",
+    "inquirer": "^5.1.0",
+    "is-async-supported": "^1.2.0",
+    "js-yaml": "^3.10.0",
+    "lodash": "^4.17.5",
+    "open": "^0.0.5",
+    "ora": "^2.0.0",
+    "random-string": "^0.2.0",
+    "registry-auth-token": "^3.3.2",
+    "request": "^2.83.0",
+    "request-promise-native": "^1.0.5",
+    "shortid": "^2.2.8",
+    "then-sleep": "^1.0.1"
+  },
+  "devDependencies": {
+    "pre-commit-package-version": "^1.0.7",
+    "standard": "^11.0.0"
+  }
+}
