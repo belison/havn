@@ -12,7 +12,7 @@ const versionCheck = async (ref = 'master') => {
     const client = await github.getAuthenticatedClient()
     const latest = parse(
       await client.repos.getContent({
-        owner: 'havn',
+        owner: 'havnjs',
         repo: 'havn',
         path: 'package.json',
         ref

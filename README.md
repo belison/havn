@@ -46,7 +46,7 @@ havn stop
 from source
 
 ```sh
-git clone https://github.com/havn/havn.git
+git clone https://github.com/havnjs/havn.git
 cd havn
 npm link
 ```

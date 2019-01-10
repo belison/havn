@@ -7,7 +7,7 @@
   "contributors": [
     "BJ Neilsen <bj.neilsen@gmail.com> (https://localshred.github.io)"
   ],
-  "repository": "havn/havn"
+  "repository": "havnjs/havn"
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
