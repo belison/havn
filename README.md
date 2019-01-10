@@ -177,7 +177,7 @@ the format below. Using the `services.json` allows you to build mutliple project
 {
   "run": [
     "../my-locally-built-app-1",
-    "../../other-directory/cor-apps/my-locally-built-app-2"
+    "../../other-directory/my-locally-built-app-2"
   ]
 }
 ```
@@ -191,7 +191,7 @@ You can also specify command line arguments for convenience in `services.json` a
       "directory": "../my-locally-built-app-1",
       "optionals": ["dep", "dep-2"]
     },
-    "../../other-directory/cor-apps/my-locally-built-app-2"
+    "../../other-directory/my-locally-built-app-2"
   ],
   "params": {
     "aliases": ["my-local.mydomain.com", "your-local.mydomain.com"]
@@ -214,7 +214,7 @@ The `services.json` also allows you to override environment variables in any of 
 
 ## Troubleshooting
 
-### The cor-main container doesn't launch, throws errors
+### The main container doesn't launch, throws errors
 
 This issue may be caused by Docker running out of space in its virtual disk,
 even though Docker may be reporting that it has plenty of space. Try the
