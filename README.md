@@ -53,7 +53,8 @@ npm link
 
 ## Project Configuration
 
-```json
+```
+# service.json
 {
   "name": "my-project",
   "version": "1.1.12",
@@ -66,14 +67,28 @@ npm link
     }
   ],
   "common": {
-    "container": {...},
-    "router": {...},
-    "dependencies": {...},
-    "optional-dependencies": {...},
-    "environmentOverrides": {...}
+    "container": {
+      # ...
+    },
+    "router": {
+      # ...
+    },
+    "dependencies": {
+      # ...
+    },
+    "optional-dependencies": {
+      # ...
+    },
+    "environmentOverrides": {
+      # ...
+    }
   },
-  "build": { /* overrides common settings on a build */ },
-  "image": { /* overrides common settings for and image */ }
+  "build": {
+    # overrides common settings on a build
+  },
+  "image": {
+    # overrides common settings for and image
+  }
 }
 ```
 
