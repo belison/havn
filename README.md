@@ -108,7 +108,7 @@ The container section matches the docker-compose file's properties
 
 ```json
 {
-  "router": "cor-proxy",
+  "router": "proxy",
   "redirects": {
     "/my-app": "/my-app/"
   },
