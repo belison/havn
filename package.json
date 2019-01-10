@@ -17,6 +17,7 @@
     "havn": "index.js"
   },
   "dependencies": {
+    "@octokit/rest": "^16.8.0",
     "async-retry": "^1.2.3",
     "async-to-gen": "^1.4.0",
     "axios": "^0.18.0",
@@ -25,7 +26,6 @@
     "commander": "^2.19.0",
     "configstore": "^4.0.0",
     "diff-json": "^1.1.0",
-    "github": "^13.1.0",
     "inquirer": "^6.2.1",
     "is-async-supported": "^1.2.0",
     "js-yaml": "^3.12.1",

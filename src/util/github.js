@@ -1,7 +1,7 @@
 const retry = require('async-retry')
 const Promise = require('bluebird')
 const { red } = require('chalk')
-const GitHubAPI = require('github')
+const Octokit = require('@octokit/rest')
 const open = require('open')
 const ora = require('ora')
 const queryString = require('querystring')
@@ -12,7 +12,7 @@ const sleep = require('then-sleep')
 const config = require('./config')
 const pkg = require('../../package.json')
 
-const github = new GitHubAPI({
+const github = new Octokit({
   protocol: 'https',
   headers: { 'user-agent': `Havn v${pkg.version}` }
 })
