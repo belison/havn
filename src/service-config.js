@@ -128,12 +128,8 @@ class ServiceConfig {
    */
   getBuild (config, key) {
     const type = !key
-      ? this.image
-        ? IMAGE
-        : BUILD
-      : key in this.build
-        ? BUILD
-        : IMAGE
+      ? this.image ? IMAGE : BUILD
+      : key in this.build ? BUILD : IMAGE
 
     const build = defaultsDeep({}, config[type], config.common)
     return this.addOptionals(build)

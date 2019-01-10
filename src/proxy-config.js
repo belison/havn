@@ -50,7 +50,12 @@ exports.config = async configs => {
   links.push('proxy-redis')
   await initConfigFiles(configDirs, upstreams, paths, websockets)
   let proxyRules = buildProxyRules(upstreams, websockets, paths, rules)
-  proxyRules = chain(proxyRules).toPairs().sortBy(0).reverse().fromPairs().value()
+  proxyRules = chain(proxyRules)
+    .toPairs()
+    .sortBy(0)
+    .reverse()
+    .fromPairs()
+    .value()
   return Object.assign({}, TEMPLATE, {
     links,
     environment: Object.assign({}, TEMPLATE.environment, {
@@ -69,11 +74,11 @@ async function initConfigDirs () {
   }
   const base = `${configDir}/${PROXY_BASE_CFG_DIR}`
   const ppd = `${base}/${PROXY_PROXY_DIR}`
-  if (!(await file.exists(ppd))) {
+  if (!await file.exists(ppd)) {
     await file.mkdirp(ppd)
   }
   const pcd = `${base}/${PROXY_CONFIG_DIR}`
-  if (!(await file.exists(pcd))) {
+  if (!await file.exists(pcd)) {
     await file.mkdirp(pcd)
   }
   return {

@@ -87,7 +87,7 @@ async function start () {
 
 async function initConfigDirectories () {
   const scd = `${process.env.HAVN_CONFIG_HOME}/sinopia/.registry`
-  if (!(await file.exists(scd))) await file.mkdirp(scd)
+  if (!await file.exists(scd)) await file.mkdirp(scd)
 }
 
 async function initConfigFiles () {

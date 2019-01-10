@@ -2,9 +2,7 @@
 
 const program = require('commander')
 
-program
-  .option('-f, --force', 'force installation')
-  .parse(process.argv)
+program.option('-f, --force', 'force installation').parse(process.argv)
 
 var pkgs = program.args
 
@@ -15,7 +13,7 @@ if (!pkgs.length) {
 
 console.log()
 if (program.force) console.log('  force: install')
-pkgs.forEach(function(pkg) {
+pkgs.forEach(function (pkg) {
   console.log('  install : %s', pkg)
 })
 console.log()

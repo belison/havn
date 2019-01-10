@@ -92,12 +92,8 @@ function getServiceMeta (src, key) {
 
 function getBuild (src, key) {
   const type = !key
-    ? src.image
-      ? IMAGE
-      : BUILD
-    : key in src.build
-      ? BUILD
-      : IMAGE
+    ? src.image ? IMAGE : BUILD
+    : key in src.build ? BUILD : IMAGE
 
   const data = src.config ? src.config : src
   const build = defaultsDeep({}, data[type], data.common)

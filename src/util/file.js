@@ -39,16 +39,13 @@ exports.isDirectory = async function (path) {
 }
 
 exports.mkdirp = async function (path) {
-  path.split('/').reduce(
-    (path, folder) => {
-      path += folder + '/'
-      if (!fs.existsSync(path)) {
-        fs.mkdirSync(path)
-      }
-      return path
-    },
-    ''
-  )
+  path.split('/').reduce((path, folder) => {
+    path += folder + '/'
+    if (!fs.existsSync(path)) {
+      fs.mkdirSync(path)
+    }
+    return path
+  }, '')
 }
 
 exports.directory = function (directory) {

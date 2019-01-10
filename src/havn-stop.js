@@ -17,10 +17,7 @@ async function stop () {
   if (commander.volumes) switches += ' --volumes'
   if (commander.removeOrphans) switches += ' --remove-orphans'
 
-  const commands = [
-    `cd ${dir}`,
-    `docker-compose down${switches}`
-  ]
+  const commands = [`cd ${dir}`, `docker-compose down${switches}`]
 
   if (commander.prune) {
     commands.push('printf "y\n" | docker system prune')
