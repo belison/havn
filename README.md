@@ -2,7 +2,11 @@
 
 # Objective
 
-A docker-compose-composer.
+A docker-compose-remote-composer.
+
+## Description
+
+To provide tooling for running a service and its dependencies (and its dependencies depdendencies, etc) with minimal manual work involved. Havn's purpose is to allow you to describe first-order service dependencies in a docker-compose(ish) way, without needing any of those dependencies locally available. Havn will fetch the dependency service configurations from github or gitlab, compose everything into a `docker-compose.yml` that will run the whole stack as necessitated by your local `service.json` config and it's tree of dependencies.
 
 ## Installation
 
